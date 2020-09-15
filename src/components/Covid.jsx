@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Axios from "axios";
-import { Link } from "react-router-dom";
-// import "../App.css";
+import Navbar from "./Navbar";
 
 function Covid() {
   const [covid, setCovid] = useState([]);
@@ -18,8 +17,8 @@ function Covid() {
   }, []);
 
   return (
-    <div>
-      <Link to="/">Back</Link>
+    <div className="covid">
+      <Navbar />
       <h1>US Covid Tracker</h1>
       {covid.map((covidCases) => {
         return (

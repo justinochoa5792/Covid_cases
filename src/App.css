@@ -48,3 +48,14 @@
   align-items: center;
   justify-content: center;
 }
+.navbar {
+  display: flex;
+  background-color: #a2d5f2;
+  color: white;
+}
+.covid {
+  background-color: #e8ded2;
+}
+.europe {
+  background-color: #e8ded2;
+}

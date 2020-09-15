@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Axios from "axios";
-import { Link } from "react-router-dom";
+import Navbar from "./Navbar";
 
 function Europe() {
   const [euroCovid, seteuroCovid] = useState([]);
@@ -16,8 +16,8 @@ function Europe() {
     renderEurope();
   }, []);
   return (
-    <div>
-      <Link to="/">Back</Link>
+    <div className="europe">
+      <Navbar />
       <h1>European Covid Cases</h1>
       {euroCovid.map((eachCase) => {
         return (
