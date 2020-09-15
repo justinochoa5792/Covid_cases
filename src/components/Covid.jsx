@@ -20,7 +20,7 @@ function Covid() {
   return (
     <div>
       <Link to="/">Back</Link>
-      <h1>Covid Tracker</h1>
+      <h1>US Covid Tracker</h1>
       {covid.map((covidCases) => {
         return (
           <ul>
@@ -28,7 +28,7 @@ function Covid() {
             <li>State: {covidCases.Province}</li>
             <li>Active Cases: {covidCases.Active}</li>
             <li>Recovered Cases: {covidCases.Recovered}</li>
-            <li>Deceased Cases: {covidCases.Deaths}</li>
+            <li>Deceased: {covidCases.Deaths}</li>
           </ul>
         );
       })}

@@ -39,3 +39,12 @@
     transform: rotate(360deg);
   }
 }
+.home {
+  background-image: url("/images/f0e1869820b56bcc79819dee3f35490e.jpg");
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
